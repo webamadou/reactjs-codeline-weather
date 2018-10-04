@@ -20,7 +20,7 @@ class CitiesContainer extends Component {
     this.state.cities.map(city =>
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${
+          `https://api.openweathermap.org/data/2.5/weather?q=${
             city.name
           }&units=metric&appid=c4b103f88241b4d8a8f402853788e5f7`
         )

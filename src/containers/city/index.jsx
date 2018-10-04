@@ -12,7 +12,7 @@ class City extends Component {
     this.setState({ fetching: true });
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=c4b103f88241b4d8a8f402853788e5f7`
+        `https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=c4b103f88241b4d8a8f402853788e5f7`
       )
       .then(response => {
         console.log(response);
